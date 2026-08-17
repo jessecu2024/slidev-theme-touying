@@ -1,15 +1,23 @@
 # slidev-theme-touying
 
-A [Slidev](https://sli.dev/) theme inspired by [typst-touying](https://github.com/touying-typ/touying). It includes three restrained Touying ports and the editorial `sydney` preset.
+A [Slidev](https://sli.dev/) theme inspired by [typst-touying](https://github.com/touying-typ/touying). It includes four original, Apple-inspired presentation systems: `harbour`, `sandstone`, `studio`, and `sydney`.
 
-## Presets
+## Preset gallery
 
-| Preset | Character | Demo |
-|---|---|---|
-| `dewdrop` | Serif, dark green, progressive navigation | [dewdrop.md](./examples/dewdrop.md) ([Preview](https://kermanx.com/slidev-theme-touying/dewdrop/)) |
-| `university` | Formal header, progress bar, tri-color footer | [university.md](./examples/university.md) ([Preview](https://kermanx.com/slidev-theme-touying/university/)) |
-| `simple` | Minimal section header and page footer | [simple.md](./examples/simple.md) ([Preview](https://kermanx.com/slidev-theme-touying/simple/)) |
-| `sydney` | Apple-inspired type, Sydney Ochre, editorial imagery | [sydney.md](./examples/sydney.md) |
+| Harbour | Sandstone |
+|---|---|
+| [![Harbour preset preview](./docs/presets/harbour.png)](./examples/harbour.md) | [![Sandstone preset preview](./docs/presets/sandstone.png)](./examples/sandstone.md) |
+| Studio | Sydney |
+| [![Studio preset preview](./docs/presets/studio.png)](./examples/studio.md) | [![Sydney preset preview](./docs/presets/sydney.png)](./examples/sydney.md) |
+
+| Preset | Character | Best for | Showcase |
+|---|---|---|---|
+| `harbour` | Cobalt direction, sea-glass evidence, horizontal navigation | Product reviews, technical stories, research updates | [harbour.md](./examples/harbour.md) |
+| `sandstone` | Warm institutional palette, editorial header, structured footer | Strategy, governance, academic and institutional briefs | [sandstone.md](./examples/sandstone.md) |
+| `studio` | Graphite type, iris structure, coral punctuation, generous whitespace | Pitches, portfolios, concise product narratives | [studio.md](./examples/studio.md) |
+| `sydney` | Sydney Ochre, semantic data colors, editorial photography | Research, interviews, consulting, technology presentations | [sydney.md](./examples/sydney.md) |
+
+All four presets use an Apple-inspired system sans stack without bundling proprietary fonts. The former preset identifiers remain compatibility aliases (`dewdrop` → `harbour`, `university` → `sandstone`, `simple` → `studio`), but new decks should use the new names.
 
 ## Installation
 
@@ -31,7 +39,7 @@ touying:
 
 ## Sydney preset
 
-Sydney preserves the restraint of Touying Simple while adding a more complete professional presentation system. It is designed for academic talks, interviews, research communication, technology presentations, and consulting-style recommendations.
+Sydney builds on Touying's restraint while adding a more complete professional presentation system. It is designed for academic talks, interviews, research communication, technology presentations, and consulting-style recommendations.
 
 The system favors typography, alignment, whitespace, and photography over cards, decoration, gradients, or heavy shadows.
 
@@ -233,16 +241,16 @@ All options go under `touying:` in the root frontmatter.
 
 | Option | Type | Default | Description |
 |---|---|---|---|
-| `preset` | `'dewdrop' \| 'university' \| 'simple' \| 'sydney'` | `'dewdrop'` | Active preset |
+| `preset` | `'harbour' \| 'sandstone' \| 'studio' \| 'sydney'` | `'harbour'` | Active preset |
 | `footer` | `string` | `''` | Left footer text where supported |
-| `footerRight` | `string` | `''` | Dewdrop right footer override |
+| `footerRight` | `string` | `''` | Harbour right footer override |
 | `sectionFooter` | `boolean` | `false` | Show the active section in Sydney's footer |
 
-### Dewdrop-specific
+### Harbour-specific
 
 ```yaml
 touying:
-  preset: dewdrop
+  preset: harbour
   navigation: mini-slides   # sidebar | mini-slides | none
   footer: My Presentation
   footerRight: ''
@@ -256,19 +264,19 @@ touying:
     width: '10em'
 ```
 
-### University-specific
+### Sandstone-specific
 
 ```yaml
 touying:
-  preset: university
+  preset: sandstone
 logo: /logo.svg
 ```
 
-### Simple-specific
+### Studio-specific
 
 ```yaml
 touying:
-  preset: simple
+  preset: studio
   footer: 'Author · Conference'
 ```
 
@@ -295,6 +303,9 @@ Selected PNGs and overview sheets used for visual QA are kept in [`qa/sydney/pre
 ```bash
 pnpm install
 pnpm run build
+pnpm run build:harbour
+pnpm run build:sandstone
+pnpm run build:studio
 pnpm run build:sydney
 pnpm run build:sydney:gallery
 pnpm run dev:sydney:gallery

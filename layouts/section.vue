@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTouyingConfig } from '../composables/useTouyingConfig'
-import DewdropSection from '../themes/dewdrop/layouts/section.vue'
-import UniversitySection from '../themes/university/layouts/section.vue'
-import SimpleSection from '../themes/simple/layouts/section.vue'
+import HarbourSection from '../themes/harbour/layouts/section.vue'
+import SandstoneSection from '../themes/sandstone/layouts/section.vue'
+import StudioSection from '../themes/studio/layouts/section.vue'
 import SydneySection from '../themes/sydney/layouts/section.vue'
 
 defineOptions({ inheritAttrs: false })
 const config = useTouyingConfig()
 const component = computed(() =>
-  config.value.preset === 'university'
-    ? UniversitySection
-    : config.value.preset === 'simple'
-      ? SimpleSection
+  config.value.preset === 'sandstone'
+    ? SandstoneSection
+    : config.value.preset === 'studio'
+      ? StudioSection
       : config.value.preset === 'sydney'
         ? SydneySection
-        : DewdropSection,
+        : HarbourSection,
 )
 </script>
 

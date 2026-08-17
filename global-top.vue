@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTouyingConfig } from './composables/useTouyingConfig'
-import DewdropLayer from './themes/dewdrop/global-layer.vue'
-import SimpleLayer from './themes/simple/global-layer.vue'
+import HarbourLayer from './themes/harbour/global-layer.vue'
+import SandstoneLayer from './themes/sandstone/global-layer.vue'
+import StudioLayer from './themes/studio/global-layer.vue'
 import SydneyLayer from './themes/sydney/global-layer.vue'
-import UniversityLayer from './themes/university/global-layer.vue'
 defineOptions({ inheritAttrs: false })
 const config = useTouyingConfig()
 const component = computed(() => {
-  if (config.value.preset === 'dewdrop') return DewdropLayer
-  if (config.value.preset === 'simple') return SimpleLayer
+  if (config.value.preset === 'harbour') return HarbourLayer
+  if (config.value.preset === 'sandstone') return SandstoneLayer
+  if (config.value.preset === 'studio') return StudioLayer
   if (config.value.preset === 'sydney') return SydneyLayer
-  if (config.value.preset === 'university') return UniversityLayer
   throw new Error(`Unknown preset: ${config.value.preset}`)
 })
 </script>

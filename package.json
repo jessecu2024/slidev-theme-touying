@@ -2,14 +2,14 @@
   "name": "slidev-theme-touying",
   "version": "0.1.10",
   "type": "module",
-  "description": "A Slidev theme inspired by typst-touying",
+  "description": "Four original Apple-inspired Slidev presentation systems built on Touying",
   "keywords": [
     "slidev-theme",
     "slidev",
     "touying",
-    "dewdrop",
-    "university",
-    "simple",
+    "harbour",
+    "sandstone",
+    "studio",
     "sydney"
   ],
   "author": {
@@ -17,10 +17,10 @@
     "email": "kermanx@qq.com",
     "url": "https://github.com/kermanx"
   },
-  "homepage": "https://github.com/kermanx/slidev-theme-touying#readme",
+  "homepage": "https://github.com/jessecu2024/slidev-theme-touying#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kermanx/slidev-theme-touying.git"
+    "url": "https://github.com/jessecu2024/slidev-theme-touying.git"
   },
   "license": "MIT",
   "engines": {
@@ -29,16 +29,19 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build ./entry.md",
-    "build:sydney": "slidev build ./examples/sydney.md --out dist/sydney",
-    "build:sydney:gallery": "slidev build ./examples/sydney/gallery.md --out dist/sydney-gallery",
-    "build:sydney:interview": "slidev build ./examples/sydney/interview.md --out dist/sydney-interview",
-    "build:sydney:consulting": "slidev build ./examples/sydney/consulting.md --out dist/sydney-consulting",
-    "build:sydney:academic": "slidev build ./examples/sydney/academic.md --out dist/sydney-academic",
-    "build:sydney:tech": "slidev build ./examples/sydney/tech.md --out dist/sydney-tech",
+    "build:harbour": "slidev build ./examples/harbour.md --out ../dist/harbour",
+    "build:sandstone": "slidev build ./examples/sandstone.md --out ../dist/sandstone",
+    "build:studio": "slidev build ./examples/studio.md --out ../dist/studio",
+    "build:sydney": "slidev build ./examples/sydney.md --out ../dist/sydney",
+    "build:sydney:gallery": "slidev build ./examples/sydney/gallery.md --out ../../dist/sydney-gallery",
+    "build:sydney:interview": "slidev build ./examples/sydney/interview.md --out ../../dist/sydney-interview",
+    "build:sydney:consulting": "slidev build ./examples/sydney/consulting.md --out ../../dist/sydney-consulting",
+    "build:sydney:academic": "slidev build ./examples/sydney/academic.md --out ../../dist/sydney-academic",
+    "build:sydney:tech": "slidev build ./examples/sydney/tech.md --out ../../dist/sydney-tech",
     "dev:entry": "slidev ./entry.md",
-    "dev:dewdrop": "slidev ./examples/dewdrop.md",
-    "dev:university": "slidev ./examples/university.md",
-    "dev:simple": "slidev ./examples/simple.md",
+    "dev:harbour": "slidev ./examples/harbour.md",
+    "dev:sandstone": "slidev ./examples/sandstone.md",
+    "dev:studio": "slidev ./examples/studio.md",
     "dev:sydney": "slidev ./examples/sydney.md",
     "dev:sydney:gallery": "slidev ./examples/sydney/gallery.md",
     "dev:sydney:interview": "slidev ./examples/sydney/interview.md",
@@ -51,11 +54,10 @@
     "defaults": {
       "aspectRatio": "16/9",
       "fonts": {
-        "serif": "Libertinus Serif, Linux Libertine, Noto Serif SC, Source Han Serif SC, Noto Serif CJK SC, Georgia, serif",
-        "sans": "Fira Sans",
-        "mono": "Fira Code",
-        "weights": "400,600",
-        "local": "Libertinus Serif, Linux Libertine, Source Han Serif SC, Noto Serif CJK SC, Georgia, serif"
+        "serif": "Georgia, serif",
+        "sans": "Inter, Helvetica Neue, Arial, sans-serif",
+        "mono": "SFMono-Regular, SF Mono, Menlo, Consolas, monospace",
+        "weights": "400,500,600,700"
       }
     }
   },
@@ -83,7 +85,6 @@
   },
   "dependencies": {
     "@antfu/utils": "^9.3.0",
-    "@fontsource/libertinus-serif": "^5.2.1",
     "@vueuse/core": "^14.2.1"
   }
 }

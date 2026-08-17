@@ -1,0 +1,77 @@
+:root.tou-preset-sandstone {
+  --slidev-theme-primary: #b44b32;
+  --slidev-theme-secondary: #2f6c5f;
+  --slidev-theme-tertiary: #d9b166;
+  --sandstone-ink: #2c2926;
+  --sandstone-muted: #776f68;
+  --sandstone-line: #e4ddd4;
+  --sandstone-wash: #fbf8f3;
+  --sandstone-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Inter, Arial, sans-serif;
+
+  .slidev-layout,
+  .tou-layer {
+    font-family: var(--sandstone-font);
+    font-size: 22px;
+    color: var(--sandstone-ink);
+    letter-spacing: -0.012em;
+  }
+
+  .slidev-layout {
+    padding: 108px 72px 72px;
+    background: #ffffff;
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--sandstone-ink);
+      letter-spacing: -0.035em;
+    }
+
+    h2 {
+      font-size: 1.75em;
+      line-height: 1.08;
+      margin-bottom: 0.75em;
+    }
+
+    strong, b {
+      color: var(--slidev-theme-primary);
+    }
+
+    a {
+      color: var(--slidev-theme-secondary);
+    }
+
+    blockquote {
+      border-left-color: var(--slidev-theme-primary);
+      color: var(--sandstone-ink);
+      background: var(--sandstone-wash);
+      padding: 0.8em 1em;
+    }
+
+    tbody tr {
+      border-color: var(--sandstone-line);
+    }
+
+    :where(&) h1 {
+      display: none;
+    }
+  }
+
+  .slidev-layout.default > h2:first-child,
+  .slidev-layout.two-cols > div:first-child > h2:first-child {
+    display: none;
+  }
+
+  .sandstone-three {
+    gap: 56px;
+
+    h3 {
+      font-size: 1.16em;
+      line-height: 1.12;
+      white-space: nowrap;
+    }
+
+    p {
+      font-size: 0.86em;
+      line-height: 1.45;
+    }
+  }
+}

@@ -1,21 +1,21 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTouyingConfig } from '../composables/useTouyingConfig'
-import DewdropFocus from '../themes/dewdrop/layouts/focus.vue'
-import UniversityFocus from '../themes/university/layouts/focus.vue'
-import SimpleFocus from '../themes/simple/layouts/focus.vue'
+import HarbourFocus from '../themes/harbour/layouts/focus.vue'
+import SandstoneFocus from '../themes/sandstone/layouts/focus.vue'
+import StudioFocus from '../themes/studio/layouts/focus.vue'
 import SydneyFocus from '../themes/sydney/layouts/focus.vue'
 
 defineOptions({ inheritAttrs: false })
 const config = useTouyingConfig()
 const component = computed(() =>
-  config.value.preset === 'university'
-    ? UniversityFocus
-    : config.value.preset === 'simple'
-      ? SimpleFocus
+  config.value.preset === 'sandstone'
+    ? SandstoneFocus
+    : config.value.preset === 'studio'
+      ? StudioFocus
       : config.value.preset === 'sydney'
         ? SydneyFocus
-        : DewdropFocus,
+        : HarbourFocus,
 )
 </script>
 
