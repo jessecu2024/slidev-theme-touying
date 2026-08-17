@@ -9,7 +9,8 @@ A [Slidev](https://sli.dev/) theme inspired by [typst-touying](https://github.co
 | `new` | Simple white canvas, Apple-style system type, footer progress bar | [new.md](./examples/new.md) ([Preview](https://jessecu2024.github.io/slidev-theme-touying/new/)) |
 | `dewdrop` | Serif, dark green, progressive navigation | [dewdrop.md](./examples/dewdrop.md) ([Preview](https://kermanx.com/slidev-theme-touying/dewdrop/)) |
 | `university` | Formal header, progress bar, tri-color footer | [university.md](./examples/university.md) ([Preview](https://kermanx.com/slidev-theme-touying/university/)) |
-| `simple` | Minimal section header and page footer | [simple.md](./examples/simple.md) ([Preview](https://kermanx.com/slidev-theme-touying/simple/)) |
+| `simple` | Arial edition with repeated chapter overview and compact progress bar | [simple.md](./examples/simple.md) ([Preview](https://jessecu2024.github.io/slidev-theme-touying/simple/)) |
+| `simple-serif` | Serif edition with the same layouts, colors, and progress system | [simple-serif.md](./examples/simple-serif.md) ([Preview](https://jessecu2024.github.io/slidev-theme-touying/simple-serif/)) |
 | `sydney` | Apple-inspired type, Sydney Ochre, editorial imagery | [sydney.md](./examples/sydney.md) |
 
 ## Installation

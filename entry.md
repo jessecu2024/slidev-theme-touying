@@ -14,6 +14,7 @@ Choose a preset:
 - <a :href="getUrl('dewdrop')" class="text-primary">Dewdrop</a>
 - <a :href="getUrl('university')" class="text-primary">University</a>
 - <a :href="getUrl('simple')" class="text-primary">Simple</a>
+- <a :href="getUrl('simple-serif')" class="text-primary">Simple Serif</a>
 - <a :href="getUrl('sydney')" class="text-primary">Sydney</a>
 
 <script setup>

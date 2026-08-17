@@ -6,10 +6,10 @@ date: July 23
 transition: slide-left
 
 touying:
-  preset: simple
+  preset: simple-serif
 ---
 
-# Keep it simple!
+# Keep it simple — Serif
 
 ---
 layout: section
@@ -21,9 +21,9 @@ layout: section
 
 # Origin
 
-The **Simple** preset is a port of the [typst-touying simple theme](https://github.com/touying-typ/touying), itself adapted from [Polylux](https://github.com/andreasKroepelin/polylux) by Andreas Kröpelin.
+The **Simple Serif** preset pairs the same restrained layout system with a traditional serif typeface for editorial, academic, and formal presentations.
 
-It offers a minimal look: a small section-title header and a page counter footer.
+It keeps the repeated contents pages, compact chapter progress bar, semantic highlights, and focused single-color visual system.
 
 ---
 layout: section
@@ -37,7 +37,7 @@ layout: section
 
 ```yaml
 touying:
-  preset: simple
+  preset: simple-serif
 
 themeConfig:
   primary: '#105ca4' # Overrides the default primary color
@@ -68,9 +68,9 @@ layout: section
 
 ## Level 2 Heading
 
-Body text uses Arial. **Bold** is rendered in the primary color. *Italic*, `inline code`, and ~~strikethrough~~ are all supported.
+Body text uses Georgia with serif fallbacks. **Bold** is rendered in the primary color. *Italic*, `inline code`, and ~~strikethrough~~ are all supported.
 
-> Blockquotes have a left border in the primary color.
+> Blockquotes use a neutral background and the same primary-blue accent.
 
 ---
 
@@ -79,7 +79,7 @@ Body text uses Arial. **Bold** is rendered in the primary color. *Italic*, `inli
 Use <TextHighlight color="red">red for risks or critical exceptions</TextHighlight> and <TextHighlight color="green">green for validated gains or positive outcomes</TextHighlight> inside a paragraph.
 
 <EmphasisBox>
-Key takeaway: use the rounded blue emphasis box for the single message that the audience should remember.
+Key takeaway: the serif edition keeps the same rounded blue emphasis box and white text.
 </EmphasisBox>
 
 ---
@@ -125,7 +125,7 @@ const sum = (a: number, b: number): number => a + b
 
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| `--slidev-theme-primary` | color | `#007a7a` | Accent color |
+| `--slidev-theme-primary` | color | `#105ca4` | Accent color |
 | `chapterProgress` | boolean | `true` | Show the chapter bar on content slides |
 
 ---

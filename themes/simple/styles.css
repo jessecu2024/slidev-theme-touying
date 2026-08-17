@@ -1,20 +1,28 @@
-:root.tou-preset-simple {
-  --slidev-theme-primary: #3f6d7f; /* aqua.darken(50%) in Typst */
-  --spl-deco: #aaaaaa;
+:root.tou-preset-simple,
+:root.tou-preset-simple-serif {
+  --slidev-theme-primary: #105ca4;
+  --slidev-theme-font-sans: Arial, Helvetica, sans-serif;
+  --slidev-theme-font-serif: Arial, Helvetica, sans-serif;
+  --spl-font-family: Arial, Helvetica, sans-serif;
+  --spl-deco: #6f8496;
+  --spl-chapter-muted: #8b959e;
+  --spl-chapter-track: #9aa6b1;
+  --spl-chapter-track-alt: #87949f;
 
   .slidev-layout {
-    padding: 48px 64px;
+    padding: 36px 84px 68px;
   }
 
   .slidev-layout, .tou-layer {
+    font-family: var(--spl-font-family) !important;
     font-size: 25px;
 
     h1, h2, h3, h4, h5, h6 {
-      color: var(--slidev-theme-neutralDarkest);
+      color: var(--slidev-theme-primary);
     }
 
     strong, b {
-      color: var(--slidev-theme-neutralDarkest);
+      color: var(--slidev-theme-primary);
     }
 
     /* h2 is the slide title (subslide-preamble in typst): 1.2em bold */
@@ -29,12 +37,33 @@
       font-size: 1.4em;
     }
 
+    h6 {
+      text-transform: none;
+    }
+
     a {
       color: var(--slidev-theme-primary);
     }
 
     blockquote {
       border-left-color: var(--slidev-theme-primary);
+      background: #edf1f4;
+      color: var(--slidev-theme-neutralDarkest);
+      padding: 0.55em 0.8em;
+    }
+
+    thead {
+      background: #edf1f4;
     }
   }
+
+  .slidev-layout *, .tou-layer * {
+    font-family: var(--spl-font-family) !important;
+  }
+}
+
+:root.tou-preset-simple-serif {
+  --slidev-theme-font-sans: Georgia, "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --slidev-theme-font-serif: Georgia, "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  --spl-font-family: Georgia, "Times New Roman", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
 }
