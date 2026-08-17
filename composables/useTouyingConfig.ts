@@ -6,7 +6,7 @@ import { deepMerge } from '@antfu/utils'
 // ---- Types ----------------------------------------------------------------
 
 /** Non-CSS configuration read from frontmatter `touying:` */
-export type TouyingPreset = 'new' | 'dewdrop' | 'university' | 'simple' | 'sydney'
+export type TouyingPreset = 'new' | 'dewdrop' | 'university' | 'simple' | 'simple-serif' | 'sydney'
 
 export interface TouyingConfig {
   preset: TouyingPreset
@@ -60,7 +60,7 @@ export const useTouyingConfig = createSharedComposable(() => {
     const touying = first.meta.slide.frontmatter.touying ?? {}
     const merged = deepMerge(DEFAULTS, touying) as TouyingConfig
     const requestedPreset = String(merged.preset).toLowerCase() as TouyingPreset
-    const presets = new Set<TouyingPreset>(['new', 'dewdrop', 'university', 'simple', 'sydney'])
+    const presets = new Set<TouyingPreset>(['new', 'dewdrop', 'university', 'simple', 'simple-serif', 'sydney'])
     merged.preset = presets.has(requestedPreset) ? requestedPreset : DEFAULTS.preset
     return merged
   })

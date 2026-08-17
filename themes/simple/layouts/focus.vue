@@ -7,7 +7,7 @@
 </template>
 
 <style>
-.tou-preset-simple .slidev-layout.focus {
+:is(.tou-preset-simple, .tou-preset-simple-serif) .slidev-layout.focus {
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,6 +19,10 @@
   background: var(--slidev-theme-primary) !important;
   font-size: calc(1.5 * 25px);
   color: var(--slidev-theme-neutralLightest) !important;
+
+  h1, h2, h3, h4, h5, h6, p, strong, em {
+    color: var(--slidev-theme-neutralLightest) !important;
+  }
 
   & > p, & > h1 {
     width: 100%;

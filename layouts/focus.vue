@@ -14,7 +14,7 @@ const component = computed(() =>
     ? NewFocus
     : config.value.preset === 'university'
     ? UniversityFocus
-    : config.value.preset === 'simple'
+    : config.value.preset === 'simple' || config.value.preset === 'simple-serif'
       ? SimpleFocus
       : config.value.preset === 'sydney'
         ? SydneyFocus

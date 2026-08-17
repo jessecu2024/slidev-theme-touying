@@ -14,7 +14,7 @@ const component = computed(() =>
     ? NewSection
     : config.value.preset === 'university'
     ? UniversitySection
-    : config.value.preset === 'simple'
+    : config.value.preset === 'simple' || config.value.preset === 'simple-serif'
       ? SimpleSection
       : config.value.preset === 'sydney'
         ? SydneySection

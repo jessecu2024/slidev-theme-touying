@@ -11,6 +11,7 @@
     "dewdrop",
     "university",
     "simple",
+    "simple-serif",
     "sydney"
   ],
   "author": {
@@ -34,6 +35,7 @@
     "build:dewdrop": "slidev build ./examples/dewdrop.md --out ../dist/dewdrop",
     "build:university": "slidev build ./examples/university.md --out ../dist/university",
     "build:simple": "slidev build ./examples/simple.md --out ../dist/simple",
+    "build:simple-serif": "slidev build ./examples/simple-serif.md --out ../dist/simple-serif",
     "build:sydney": "slidev build ./examples/sydney.md --out ../dist/sydney",
     "build:sydney:gallery": "slidev build ./examples/sydney/gallery.md --out ../../dist/sydney-gallery",
     "build:sydney:interview": "slidev build ./examples/sydney/interview.md --out ../../dist/sydney-interview",
@@ -45,6 +47,7 @@
     "dev:dewdrop": "slidev ./examples/dewdrop.md",
     "dev:university": "slidev ./examples/university.md",
     "dev:simple": "slidev ./examples/simple.md",
+    "dev:simple-serif": "slidev ./examples/simple-serif.md",
     "dev:sydney": "slidev ./examples/sydney.md",
     "dev:sydney:gallery": "slidev ./examples/sydney/gallery.md",
     "dev:sydney:interview": "slidev ./examples/sydney/interview.md",

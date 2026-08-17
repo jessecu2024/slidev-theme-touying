@@ -36,6 +36,7 @@ jobs:
           pnpm exec slidev build ./examples/dewdrop.md --base /${{github.event.repository.name}}/dewdrop/ --out ../dist/dewdrop/
           pnpm exec slidev build ./examples/university.md --base /${{github.event.repository.name}}/university/ --out ../dist/university/
           pnpm exec slidev build ./examples/simple.md --base /${{github.event.repository.name}}/simple/ --out ../dist/simple/
+          pnpm exec slidev build ./examples/simple-serif.md --base /${{github.event.repository.name}}/simple-serif/ --out ../dist/simple-serif/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

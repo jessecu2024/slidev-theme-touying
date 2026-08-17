@@ -14,7 +14,7 @@ const component = computed(() =>
     ? NewDefault
     : config.value.preset === 'university'
     ? UniversityDefault
-    : config.value.preset === 'simple'
+    : config.value.preset === 'simple' || config.value.preset === 'simple-serif'
       ? SimpleDefault
       : config.value.preset === 'sydney'
         ? SydneyDefault

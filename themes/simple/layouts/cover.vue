@@ -33,7 +33,7 @@ const authors = computed<string[]>(() => {
 </template>
 
 <style>
-.tou-preset-simple .slidev-layout.cover {
+:is(.tou-preset-simple, .tou-preset-simple-serif) .slidev-layout.cover {
   width: 100%;
   height: 100%;
   display: flex;
@@ -51,7 +51,7 @@ const authors = computed<string[]>(() => {
   h1 {
     font-size: 2.5em !important;
     font-weight: 700 !important;
-    color: var(--slidev-theme-neutralDarkest) !important;
+    color: var(--slidev-theme-primary) !important;
     line-height: 1.15;
     margin: 0 0 1.5em !important;
   }

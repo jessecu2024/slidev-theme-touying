@@ -11,7 +11,7 @@ const config = useTouyingConfig()
 const component = computed(() => {
   if (config.value.preset === 'dewdrop') return DewdropLayer
   if (config.value.preset === 'new') return NewLayer
-  if (config.value.preset === 'simple') return SimpleLayer
+  if (config.value.preset === 'simple' || config.value.preset === 'simple-serif') return SimpleLayer
   if (config.value.preset === 'sydney') return SydneyLayer
   if (config.value.preset === 'university') return UniversityLayer
   throw new Error(`Unknown preset: ${config.value.preset}`)
