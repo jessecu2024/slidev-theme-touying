@@ -4,11 +4,18 @@ import { useTouyingConfig } from '../composables/useTouyingConfig'
 import DewdropFocus from '../themes/dewdrop/layouts/focus.vue'
 import UniversityFocus from '../themes/university/layouts/focus.vue'
 import SimpleFocus from '../themes/simple/layouts/focus.vue'
+import SydneyFocus from '../themes/sydney/layouts/focus.vue'
 
 defineOptions({ inheritAttrs: false })
 const config = useTouyingConfig()
 const component = computed(() =>
-  config.value.preset === 'university' ? UniversityFocus : config.value.preset === 'simple' ? SimpleFocus : DewdropFocus,
+  config.value.preset === 'university'
+    ? UniversityFocus
+    : config.value.preset === 'simple'
+      ? SimpleFocus
+      : config.value.preset === 'sydney'
+        ? SydneyFocus
+        : DewdropFocus,
 )
 </script>
 

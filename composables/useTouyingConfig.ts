@@ -11,6 +11,8 @@ export interface TouyingConfig {
   navigation: 'sidebar' | 'mini-slides' | 'none'
   footer: string
   footerRight: string
+  /** Show the current section title in Sydney's footer. */
+  sectionFooter: boolean
   outlineRowsPerCol: number
   alpha: number
   miniSlides: {
@@ -32,6 +34,7 @@ const DEFAULTS: TouyingConfig = {
   navigation: 'mini-slides',
   footer: '',
   footerRight: '',
+  sectionFooter: false,
   outlineRowsPerCol: 14,
   alpha: 0.3,
   miniSlides: {

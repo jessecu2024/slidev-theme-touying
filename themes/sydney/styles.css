@@ -1,0 +1,522 @@
+:root.tou-preset-sydney {
+  /* Typography */
+  --syd-font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Inter, Arial, sans-serif;
+  --syd-font-mono: "SFMono-Regular", "SF Mono", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  /* Brand and functional colors */
+  --color-primary: #E64626;
+  --color-charcoal: #424242;
+  --color-blue: #007AFF;
+  --color-red: #D92D20;
+  --slidev-theme-primary: var(--color-primary);
+  --slidev-theme-secondary: var(--color-blue);
+  --slidev-theme-tertiary: var(--color-charcoal);
+
+  /* Surfaces and type */
+  --surface-default: #FAF9F7;
+  --surface-white: #FFFFFF;
+  --surface-subtle: #F3F1EE;
+  --surface-dark: #343434;
+  --text-primary: #262626;
+  --text-secondary: #666666;
+  --text-muted: #85817B;
+  --text-inverse: #FAF9F7;
+  --border-subtle: #E7E5E1;
+
+  /* Editorial highlights */
+  --ochre-soft: #FCEAE5;
+  --blue-soft: #E5F1FF;
+  --red-soft: #FBE9E7;
+  --charcoal-soft: #ECEBE9;
+  --highlight-ochre: var(--ochre-soft);
+  --highlight-blue: var(--blue-soft);
+  --highlight-red: var(--red-soft);
+  --highlight-gray: var(--charcoal-soft);
+
+  /* Chart palette */
+  --chart-1: var(--color-primary);
+  --chart-2: var(--color-blue);
+  --chart-negative: var(--color-red);
+  --chart-neutral-1: var(--color-charcoal);
+  --chart-neutral-2: #7A7772;
+  --chart-neutral-3: #B8B4AD;
+  --chart-tint-ochre: #F2A18F;
+  --chart-tint-blue: #78B8FF;
+
+  /* Spacing, grid, and shape */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --slide-margin-x: 64px;
+  --slide-margin-top: 52px;
+  --slide-margin-bottom: 48px;
+  --grid-gutter: 24px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-subtle: 0 10px 30px rgba(38, 38, 38, 0.08);
+}
+
+.tou-preset-sydney .slidev-layout,
+.tou-preset-sydney .tou-layer {
+  font-family: var(--syd-font-sans);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.tou-preset-sydney .slidev-layout {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: var(--slide-margin-top) var(--slide-margin-x) var(--slide-margin-bottom);
+  background: var(--surface-default);
+}
+
+.tou-preset-sydney .slidev-layout h1,
+.tou-preset-sydney .slidev-layout h2,
+.tou-preset-sydney .slidev-layout h3,
+.tou-preset-sydney .slidev-layout h4,
+.tou-preset-sydney .slidev-layout h5,
+.tou-preset-sydney .slidev-layout h6 {
+  font-family: var(--syd-font-sans);
+  color: var(--text-primary);
+  font-weight: 650;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.tou-preset-sydney .slidev-layout h1 {
+  max-width: 860px;
+  margin: 0 0 var(--space-6);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.tou-preset-sydney .slidev-layout h2 {
+  margin: var(--space-5) 0 var(--space-3);
+  font-size: 30px;
+}
+
+.tou-preset-sydney .slidev-layout h3 {
+  margin: var(--space-4) 0 var(--space-2);
+  font-size: 24px;
+  letter-spacing: -0.015em;
+}
+
+.tou-preset-sydney .slidev-layout h4 {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+.tou-preset-sydney .slidev-layout h5,
+.tou-preset-sydney .slidev-layout h6 {
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tou-preset-sydney .slidev-layout p {
+  margin: 0 0 0.72em;
+}
+
+.tou-preset-sydney .slidev-layout strong,
+.tou-preset-sydney .slidev-layout b {
+  color: inherit;
+  font-weight: 700;
+}
+
+.tou-preset-sydney .slidev-layout a {
+  color: var(--color-blue);
+  text-decoration-color: color-mix(in srgb, var(--color-blue) 45%, transparent);
+  text-underline-offset: 0.16em;
+}
+
+.tou-preset-sydney .slidev-layout ul,
+.tou-preset-sydney .slidev-layout ol {
+  margin: var(--space-3) 0;
+  padding-left: 1.15em;
+}
+
+.tou-preset-sydney .slidev-layout ul {
+  list-style: none;
+}
+
+.tou-preset-sydney .slidev-layout ul > li {
+  position: relative;
+  margin: 0.34em 0;
+  padding-left: 0.55em;
+}
+
+.tou-preset-sydney .slidev-layout ul > li::before {
+  position: absolute;
+  left: -0.72em;
+  top: 0.63em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  content: '';
+}
+
+.tou-preset-sydney .slidev-layout blockquote {
+  margin: var(--space-5) 0;
+  padding: 0 0 0 var(--space-5);
+  border-left: 3px solid var(--color-primary);
+  color: var(--text-secondary);
+}
+
+.tou-preset-sydney .slidev-layout pre,
+.tou-preset-sydney .slidev-layout code,
+.tou-preset-sydney .slidev-layout kbd {
+  font-family: var(--syd-font-mono);
+}
+
+.tou-preset-sydney .slidev-layout pre {
+  margin: var(--space-4) 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+.tou-preset-sydney .slidev-layout code {
+  border-radius: var(--radius-sm);
+}
+
+.tou-preset-sydney .slidev-layout table {
+  width: 100%;
+  margin-top: var(--space-4);
+  border: 0;
+  border-collapse: collapse;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.tou-preset-sydney .slidev-layout thead tr {
+  border-top: 1.5px solid var(--text-primary);
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.tou-preset-sydney .slidev-layout tbody tr {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tou-preset-sydney .slidev-layout th {
+  padding: 10px 12px;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-align: left;
+}
+
+.tou-preset-sydney .slidev-layout td {
+  padding: 10px 12px;
+  vertical-align: top;
+}
+
+.tou-preset-sydney .slidev-layout .cell-primary {
+  background: var(--ochre-soft);
+  color: #8B2714;
+  font-weight: 650;
+}
+
+.tou-preset-sydney .slidev-layout .cell-info {
+  background: var(--blue-soft);
+  color: #0059B8;
+  font-weight: 650;
+}
+
+.tou-preset-sydney .slidev-layout .cell-negative {
+  background: var(--red-soft);
+  color: var(--color-red);
+  font-weight: 650;
+}
+
+/* Intentional text emphasis */
+.tou-preset-sydney .text-ochre { color: var(--color-primary) !important; }
+.tou-preset-sydney .text-blue { color: var(--color-blue) !important; }
+.tou-preset-sydney .text-red { color: var(--color-red) !important; }
+.tou-preset-sydney .text-charcoal { color: var(--color-charcoal) !important; }
+.tou-preset-sydney .text-muted { color: var(--text-muted) !important; }
+
+.tou-preset-sydney .hl-ochre,
+.tou-preset-sydney .hl-blue,
+.tou-preset-sydney .hl-red,
+.tou-preset-sydney .hl-gray {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0.04em 0.18em 0.08em;
+  border-radius: var(--radius-sm);
+}
+
+.tou-preset-sydney .hl-ochre { background: var(--ochre-soft); }
+.tou-preset-sydney .hl-blue { background: var(--blue-soft); }
+.tou-preset-sydney .hl-red { background: var(--red-soft); }
+.tou-preset-sydney .hl-gray { background: var(--charcoal-soft); }
+
+/* A small, deliberate background vocabulary */
+.tou-preset-sydney .slidev-layout.bg-warm,
+.tou-preset-sydney .slidev-layout.bg-default { background: var(--surface-default); }
+.tou-preset-sydney .slidev-layout.bg-white { background: var(--surface-white); }
+.tou-preset-sydney .slidev-layout.bg-soft-ochre { background: var(--ochre-soft); }
+.tou-preset-sydney .slidev-layout.bg-soft-blue { background: var(--blue-soft); }
+.tou-preset-sydney .slidev-layout.bg-charcoal { background: var(--surface-dark); color: var(--text-inverse); }
+
+.tou-preset-sydney .slidev-layout.bg-charcoal h1,
+.tou-preset-sydney .slidev-layout.bg-charcoal h2,
+.tou-preset-sydney .slidev-layout.bg-charcoal h3,
+.tou-preset-sydney .slidev-layout.bg-charcoal h4,
+.tou-preset-sydney .slidev-layout.bg-charcoal p,
+.tou-preset-sydney .slidev-layout.bg-charcoal li {
+  color: var(--text-inverse);
+}
+
+.tou-preset-sydney .syd-safe-content {
+  width: min(100%, 860px);
+}
+
+.tou-preset-sydney .syd-visually-muted {
+  color: var(--text-muted);
+}
+
+.tou-preset-sydney .syd-chart-swatches {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  margin-top: var(--space-5);
+}
+
+.tou-preset-sydney .syd-chart-swatch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.tou-preset-sydney .syd-chart-swatch::before {
+  width: 22px;
+  height: 4px;
+  background: var(--swatch, var(--color-charcoal));
+  content: '';
+}
+
+@media print {
+  .tou-preset-sydney .slidev-layout {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+/* Showcase composition helpers. They are intentionally flat and useful in
+   real decks too: no card system, no dependency on UnoCSS utilities. */
+.tou-preset-sydney .syd-agenda {
+  display: grid;
+  margin-top: 34px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.tou-preset-sydney .syd-agenda > div {
+  padding-top: 14px;
+  border-top: 2px solid var(--border-subtle);
+}
+
+.tou-preset-sydney .syd-agenda span {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+.tou-preset-sydney .syd-agenda strong {
+  display: block;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.tou-preset-sydney .syd-agenda p {
+  margin-top: 10px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.tou-preset-sydney .syd-type-demo { width: 850px; }
+
+.tou-preset-sydney .syd-type-display {
+  margin-bottom: 25px;
+  font-size: 47px;
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.tou-preset-sydney .syd-type-level {
+  display: grid;
+  margin: 10px 0;
+  grid-template-columns: 48px 1fr;
+  align-items: baseline;
+}
+
+.tou-preset-sydney .syd-type-level span {
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.tou-preset-sydney .syd-type-level strong { font-size: 28px; }
+.tou-preset-sydney .syd-type-level b { font-size: 22px; }
+
+.tou-preset-sydney .syd-type-demo > p {
+  max-width: 760px;
+  margin-top: 20px;
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+.tou-preset-sydney .syd-palette {
+  display: grid;
+  margin-top: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.tou-preset-sydney .syd-color {
+  min-height: 190px;
+  padding: 20px;
+  border-radius: var(--radius-md);
+  color: white;
+}
+
+.tou-preset-sydney .syd-color span,
+.tou-preset-sydney .syd-color strong,
+.tou-preset-sydney .syd-color small { display: block; }
+
+.tou-preset-sydney .syd-color span {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+}
+
+.tou-preset-sydney .syd-color strong {
+  margin-top: 82px;
+  font-size: 20px;
+}
+
+.tou-preset-sydney .syd-color small {
+  margin-top: 4px;
+  font-size: 13px;
+  opacity: 0.82;
+}
+
+.tou-preset-sydney .syd-color-ochre { background: var(--color-primary); }
+.tou-preset-sydney .syd-color-charcoal { background: var(--color-charcoal); }
+.tou-preset-sydney .syd-color-blue { background: var(--color-blue); }
+.tou-preset-sydney .syd-color-red { background: var(--color-red); }
+
+.tou-preset-sydney .syd-palette-note {
+  margin-top: 20px !important;
+  color: var(--text-secondary);
+  font-size: 17px;
+}
+
+.tou-preset-sydney .syd-emphasis-lines {
+  max-width: 830px;
+  margin-top: 34px;
+}
+
+.tou-preset-sydney .syd-emphasis-lines p {
+  margin: 17px 0;
+  font-size: 22px;
+}
+
+.tou-preset-sydney .syd-callout-grid {
+  display: grid;
+  margin-top: 6px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+.tou-preset-sydney .syd-callout-grid .syd-callout { margin: 10px 0; }
+
+.tou-preset-sydney .syd-metric-row {
+  display: grid;
+  margin: 36px 0 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.tou-preset-sydney .syd-chart {
+  position: relative;
+  display: grid;
+  height: 230px;
+  margin-top: 6px;
+  grid-template-columns: 35px 1fr;
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.tou-preset-sydney .syd-chart::before,
+.tou-preset-sydney .syd-chart::after {
+  position: absolute;
+  right: 0;
+  left: 35px;
+  height: 1px;
+  background: var(--border-subtle);
+  content: '';
+}
+
+.tou-preset-sydney .syd-chart::before { top: 0; }
+.tou-preset-sydney .syd-chart::after { top: 50%; }
+
+.tou-preset-sydney .syd-chart-axis {
+  display: flex;
+  padding-right: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: 11px;
+  text-align: right;
+}
+
+.tou-preset-sydney .syd-chart-bars {
+  display: grid;
+  padding: 0 50px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  align-items: end;
+}
+
+.tou-preset-sydney .syd-chart-bars > div {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.tou-preset-sydney .syd-chart-bars i {
+  display: block;
+  width: 52px;
+  flex: 0 1 auto;
+}
+
+.tou-preset-sydney .syd-chart-bars span {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
