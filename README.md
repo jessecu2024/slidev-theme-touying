@@ -6,7 +6,7 @@ A [Slidev](https://sli.dev/) theme inspired by [typst-touying](https://github.co
 
 | Preset | Character | Demo |
 |---|---|---|
-| `new` | Simple white canvas, Apple-style system type, footer progress bar | [new.md](./examples/new.md) |
+| `new` | Simple white canvas, Apple-style system type, footer progress bar | [new.md](./examples/new.md) ([Preview](https://jessecu2024.github.io/slidev-theme-touying/new/)) |
 | `dewdrop` | Serif, dark green, progressive navigation | [dewdrop.md](./examples/dewdrop.md) ([Preview](https://kermanx.com/slidev-theme-touying/dewdrop/)) |
 | `university` | Formal header, progress bar, tri-color footer | [university.md](./examples/university.md) ([Preview](https://kermanx.com/slidev-theme-touying/university/)) |
 | `simple` | Minimal section header and page footer | [simple.md](./examples/simple.md) ([Preview](https://kermanx.com/slidev-theme-touying/simple/)) |
