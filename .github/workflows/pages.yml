@@ -31,11 +31,11 @@ jobs:
 
       - name: Build
         run: |
-          nr build ./entry.md --base /${{github.event.repository.name}}/ -o ./dist/
-          nr build ./examples/new.md --base /${{github.event.repository.name}}/new/ -o ../dist/new/
-          nr build ./examples/dewdrop.md --base /${{github.event.repository.name}}/dewdrop/ -o ../dist/dewdrop/
-          nr build ./examples/university.md --base /${{github.event.repository.name}}/university/ -o ../dist/university/
-          nr build ./examples/simple.md --base /${{github.event.repository.name}}/simple/ -o ../dist/simple/
+          pnpm exec slidev build ./entry.md --base /${{github.event.repository.name}}/ --out ./dist/
+          pnpm exec slidev build ./examples/new.md --base /${{github.event.repository.name}}/new/ --out ../dist/new/
+          pnpm exec slidev build ./examples/dewdrop.md --base /${{github.event.repository.name}}/dewdrop/ --out ../dist/dewdrop/
+          pnpm exec slidev build ./examples/university.md --base /${{github.event.repository.name}}/university/ --out ../dist/university/
+          pnpm exec slidev build ./examples/simple.md --base /${{github.event.repository.name}}/simple/ --out ../dist/simple/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
