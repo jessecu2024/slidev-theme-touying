@@ -157,6 +157,8 @@ Components are exposed from the theme's root `components/` directory, so they ca
 | `ImageFrame` | `src`, `alt`, `fit`, `position`, `caption`, `radius` | Contained image with predictable cropping |
 | `Caption` | `align` | Muted source or explanatory line |
 | `Eyebrow` | `color` | Small kicker above a title |
+| `SydneyBarChart` | `items`, `max`, `suffix`, `compact` | Flat horizontal comparison chart with semantic accents |
+| `SydneyLineChart` | `labels`, `series`, `min`, `max`, `suffix` | Native SVG trend chart with a restrained legend |
 
 ```vue
 <Callout type="insight">
@@ -270,16 +272,36 @@ touying:
   footer: 'Author · Conference'
 ```
 
+## Sydney template gallery
+
+![Sydney template gallery](./docs/sydney-gallery.png)
+
+The gallery contains 32 copy-ready compositions plus a landing slide. Four complete example decks show how those patterns work as coherent narratives rather than isolated layouts.
+
+| Deck | Slides | Source | Rendered PDF |
+|---|---:|---|---|
+| Template gallery | 33 | [gallery.md](./examples/sydney/gallery.md) | — |
+| Interview | 12 | [interview.md](./examples/sydney/interview.md) | [interview.pdf](./qa/sydney/pdf/interview.pdf) |
+| Consulting | 17 | [consulting.md](./examples/sydney/consulting.md) | [consulting.pdf](./qa/sydney/pdf/consulting.pdf) |
+| Academic research | 15 | [academic.md](./examples/sydney/academic.md) | [academic.pdf](./qa/sydney/pdf/academic.pdf) |
+| Technology product | 14 | [tech.md](./examples/sydney/tech.md) | [tech.pdf](./qa/sydney/pdf/tech.pdf) |
+
+To reuse a composition, copy the Markdown between its `---` slide separators into a deck using `touying.preset: sydney`. Preserve any slide-level frontmatter and named slots such as `::right::`; replace local image paths as needed. The bundled photographs live under `examples/sydney/public/assets/sydney/shared`, with license and source metadata in [ATTRIBUTION.md](./examples/sydney/public/assets/sydney/ATTRIBUTION.md).
+
+Selected PNGs and overview sheets used for visual QA are kept in [`qa/sydney/previews`](./qa/sydney/previews).
+
 ## Development and visual QA
 
 ```bash
 pnpm install
 pnpm run build
 pnpm run build:sydney
-pnpm run dev:sydney
+pnpm run build:sydney:gallery
+pnpm run dev:sydney:gallery
+pnpm run dev:sydney:interview
 ```
 
-The Sydney showcase contains 26 slides and demonstrates every Sydney layout, component, table treatment, chart color, dark slide, image composition, and code treatment. Its photographs are stored locally under `examples/public/images`; attribution is included in each relevant slide's notes.
+All commands and assets use repository-relative paths. The original 26-slide showcase remains at [examples/sydney.md](./examples/sydney.md); the larger gallery and complete decks are additive. Illustrative metrics, companies, people, and quotations are labelled in the decks. Academic references and photograph attribution are recorded alongside the relevant source slides.
 
 ## License
 

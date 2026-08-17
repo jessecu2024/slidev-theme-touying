@@ -30,11 +30,21 @@
     "dev": "slidev",
     "build": "slidev build ./entry.md",
     "build:sydney": "slidev build ./examples/sydney.md --out dist/sydney",
+    "build:sydney:gallery": "slidev build ./examples/sydney/gallery.md --out dist/sydney-gallery",
+    "build:sydney:interview": "slidev build ./examples/sydney/interview.md --out dist/sydney-interview",
+    "build:sydney:consulting": "slidev build ./examples/sydney/consulting.md --out dist/sydney-consulting",
+    "build:sydney:academic": "slidev build ./examples/sydney/academic.md --out dist/sydney-academic",
+    "build:sydney:tech": "slidev build ./examples/sydney/tech.md --out dist/sydney-tech",
     "dev:entry": "slidev ./entry.md",
     "dev:dewdrop": "slidev ./examples/dewdrop.md",
     "dev:university": "slidev ./examples/university.md",
     "dev:simple": "slidev ./examples/simple.md",
-    "dev:sydney": "slidev ./examples/sydney.md"
+    "dev:sydney": "slidev ./examples/sydney.md",
+    "dev:sydney:gallery": "slidev ./examples/sydney/gallery.md",
+    "dev:sydney:interview": "slidev ./examples/sydney/interview.md",
+    "dev:sydney:consulting": "slidev ./examples/sydney/consulting.md",
+    "dev:sydney:academic": "slidev ./examples/sydney/academic.md",
+    "dev:sydney:tech": "slidev ./examples/sydney/tech.md"
   },
   "slidev": {
     "colorSchema": "light",
@@ -52,6 +62,7 @@
   "files": [
     "composables",
     "components",
+    "docs",
     "examples",
     "layouts",
     "setup",

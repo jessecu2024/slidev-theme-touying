@@ -50,6 +50,10 @@ const { $frontmatter } = useSlideContext()
   color: white !important;
 }
 
+.tou-preset-sydney .syd-image-overlay-copy .syd-eyebrow {
+  color: rgba(255, 255, 255, 0.76) !important;
+}
+
 .tou-preset-sydney .syd-image-overlay-center {
   justify-content: center;
   text-align: center;

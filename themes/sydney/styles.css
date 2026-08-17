@@ -520,3 +520,344 @@
   color: var(--text-secondary);
   font-size: 13px;
 }
+
+/* Reusable template recipes shared by the Sydney gallery decks. */
+.tou-preset-sydney .syd-lede {
+  max-width: 690px;
+  color: var(--text-secondary);
+  font-size: 22px;
+  line-height: 1.38;
+}
+
+.tou-preset-sydney .syd-data-note {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 0.025em;
+}
+
+.tou-preset-sydney .syd-rule-list {
+  display: grid;
+  margin-top: var(--space-5);
+  gap: 0;
+}
+
+.tou-preset-sydney .syd-rule-list > div {
+  display: grid;
+  padding: 14px 0;
+  grid-template-columns: 42px 1fr auto;
+  gap: 16px;
+  align-items: baseline;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.tou-preset-sydney .syd-rule-list span {
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.tou-preset-sydney .syd-rule-list strong { font-size: 19px; }
+.tou-preset-sydney .syd-rule-list small { color: var(--text-muted); font-size: 14px; }
+
+.tou-preset-sydney .syd-timeline {
+  position: relative;
+  display: grid;
+  margin-top: 54px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.tou-preset-sydney .syd-timeline::before {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: var(--border-subtle);
+  content: '';
+}
+
+.tou-preset-sydney .syd-timeline > div { position: relative; padding-top: 34px; }
+.tou-preset-sydney .syd-timeline > div::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border: 3px solid var(--surface-default);
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+  content: '';
+}
+
+.tou-preset-sydney .syd-timeline span {
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+}
+
+.tou-preset-sydney .syd-timeline strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.tou-preset-sydney .syd-timeline p {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.tou-preset-sydney .syd-insights {
+  display: grid;
+  margin-top: 34px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.tou-preset-sydney .syd-insights > div {
+  padding-top: 17px;
+  border-top: 3px solid var(--color-primary);
+}
+
+.tou-preset-sydney .syd-insights > div:nth-child(2) { border-top-color: var(--color-blue); }
+.tou-preset-sydney .syd-insights > div:nth-child(3) { border-top-color: var(--color-charcoal); }
+
+.tou-preset-sydney .syd-insights strong {
+  display: block;
+  font-size: 23px;
+  line-height: 1.17;
+}
+
+.tou-preset-sydney .syd-insights p {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.tou-preset-sydney .syd-evidence {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1.45fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.tou-preset-sydney .syd-evidence-claim {
+  padding-left: 22px;
+  border-left: 4px solid var(--color-primary);
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.tou-preset-sydney .syd-evidence-copy { color: var(--text-secondary); font-size: 17px; }
+
+.tou-preset-sydney .syd-qa {
+  display: grid;
+  margin-top: 42px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 54px;
+}
+
+.tou-preset-sydney .syd-qa > div { padding-top: 18px; border-top: 2px solid var(--border-subtle); }
+.tou-preset-sydney .syd-qa > div:last-child { border-top-color: var(--color-primary); }
+.tou-preset-sydney .syd-qa span { color: var(--text-muted); font-size: 13px; font-weight: 750; letter-spacing: 0.09em; text-transform: uppercase; }
+.tou-preset-sydney .syd-qa strong { display: block; margin-top: 17px; font-size: 25px; line-height: 1.2; }
+.tou-preset-sydney .syd-qa p { margin-top: 12px; color: var(--text-secondary); font-size: 17px; }
+
+.tou-preset-sydney .syd-kpis {
+  display: grid;
+  margin-top: 45px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.tou-preset-sydney .syd-kpis > div { padding-top: 15px; border-top: 2px solid var(--border-subtle); }
+.tou-preset-sydney .syd-kpis strong { display: block; color: var(--color-primary); font-size: 47px; font-variant-numeric: tabular-nums; letter-spacing: -0.05em; line-height: 1; }
+.tou-preset-sydney .syd-kpis > div:nth-child(2) strong { color: var(--color-blue); }
+.tou-preset-sydney .syd-kpis > div:nth-child(n+3) strong { color: var(--color-charcoal); }
+.tou-preset-sydney .syd-kpis span { display: block; margin-top: 10px; color: var(--text-secondary); font-size: 15px; line-height: 1.25; }
+
+.tou-preset-sydney .syd-two-chart {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+}
+
+.tou-preset-sydney .syd-two-chart > div { min-width: 0; }
+.tou-preset-sydney .syd-two-chart > div + div { padding-left: 34px; border-left: 1px solid var(--border-subtle); }
+.tou-preset-sydney .syd-two-chart h3 { margin-top: 0; font-size: 19px; }
+.tou-preset-sydney .syd-two-chart .syd-bars-row { grid-template-columns: 90px minmax(0, 1fr) 46px; }
+
+.tou-preset-sydney .syd-key-row td { background: var(--ochre-soft); font-weight: 650; }
+.tou-preset-sydney .syd-info-row td { background: var(--blue-soft); }
+.tou-preset-sydney .syd-risk-row td { color: var(--color-red); }
+
+.tou-preset-sydney .syd-sample-grid {
+  margin-top: var(--space-4);
+  border-top: 1.5px solid var(--text-primary);
+}
+
+.tou-preset-sydney .syd-sample-row {
+  display: grid;
+  padding: 10px 12px;
+  grid-template-columns: minmax(0, 2.2fr) 0.8fr 1fr 1.2fr;
+  gap: 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  align-items: baseline;
+  font-size: 17px;
+}
+
+.tou-preset-sydney .syd-sample-row > :not(:first-child) {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.tou-preset-sydney .syd-sample-head {
+  border-bottom-color: var(--text-primary);
+  font-size: 15px;
+}
+
+.tou-preset-sydney .syd-process {
+  display: grid;
+  margin-top: 48px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.tou-preset-sydney .syd-process > div { position: relative; padding: 18px 18px 0 0; border-top: 2px solid var(--border-subtle); }
+.tou-preset-sydney .syd-process > div::after {
+  position: absolute;
+  top: -5px;
+  right: 4px;
+  color: var(--text-muted);
+  font-size: 18px;
+  content: '→';
+}
+.tou-preset-sydney .syd-process > div:last-child::after { content: ''; }
+.tou-preset-sydney .syd-process span { color: var(--color-primary); font-size: 13px; font-weight: 750; letter-spacing: 0.08em; }
+.tou-preset-sydney .syd-process strong { display: block; margin-top: 18px; font-size: 20px; line-height: 1.2; }
+.tou-preset-sydney .syd-process p { margin-top: 10px; color: var(--text-secondary); font-size: 14px; line-height: 1.35; }
+
+.tou-preset-sydney .syd-roadmap {
+  display: grid;
+  margin-top: 34px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.tou-preset-sydney .syd-roadmap > div {
+  min-height: 250px;
+  padding: 18px 20px;
+  border-top: 4px solid var(--color-charcoal);
+  border-left: 1px solid var(--border-subtle);
+}
+.tou-preset-sydney .syd-roadmap > div:first-child { border-left: 0; }
+.tou-preset-sydney .syd-roadmap > div:nth-child(2) { border-top-color: var(--color-blue); }
+.tou-preset-sydney .syd-roadmap > div:nth-child(3) { border-top-color: var(--color-primary); }
+.tou-preset-sydney .syd-roadmap > div:nth-child(4) { border-top-color: var(--color-red); }
+.tou-preset-sydney .syd-roadmap span { color: var(--text-muted); font-size: 13px; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+.tou-preset-sydney .syd-roadmap strong { display: block; margin-top: 18px; font-size: 20px; }
+.tou-preset-sydney .syd-roadmap ul { margin-top: 15px; padding-left: 0.9em; }
+.tou-preset-sydney .syd-roadmap li { color: var(--text-secondary); font-size: 14px; }
+
+.tou-preset-sydney .syd-issue-tree {
+  display: grid;
+  margin-top: 22px;
+  grid-template-columns: 0.82fr 1.8fr;
+  gap: 54px;
+  align-items: center;
+}
+
+.tou-preset-sydney .syd-issue-root { padding: 22px 0; border-top: 3px solid var(--color-primary); border-bottom: 1px solid var(--border-subtle); font-size: 23px; font-weight: 650; line-height: 1.2; }
+.tou-preset-sydney .syd-issue-branches { display: grid; gap: 12px; }
+.tou-preset-sydney .syd-issue-branches > div { padding: 10px 0 10px 22px; border-left: 3px solid var(--color-charcoal); }
+.tou-preset-sydney .syd-issue-branches > div:first-child { border-left-color: var(--color-primary); }
+.tou-preset-sydney .syd-issue-branches > div:nth-child(2) { border-left-color: var(--color-blue); }
+.tou-preset-sydney .syd-issue-branches strong { display: block; font-size: 18px; }
+.tou-preset-sydney .syd-issue-branches span { color: var(--text-secondary); font-size: 14px; }
+
+.tou-preset-sydney .syd-screen {
+  overflow: hidden;
+  border: 1px solid #D9D7D2;
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: var(--shadow-subtle);
+}
+
+.tou-preset-sydney .syd-screen-bar {
+  display: flex;
+  height: 36px;
+  padding: 0 14px;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: #F6F5F3;
+}
+.tou-preset-sydney .syd-screen-bar i { width: 8px; height: 8px; border-radius: 50%; background: #C7C4BE; }
+.tou-preset-sydney .syd-screen-body { display: grid; min-height: 300px; grid-template-columns: 150px 1fr; }
+.tou-preset-sydney .syd-screen-nav { padding: 20px 16px; border-right: 1px solid var(--border-subtle); color: var(--text-muted); font-size: 12px; }
+.tou-preset-sydney .syd-screen-nav strong { display: block; margin-bottom: 23px; color: var(--text-primary); font-size: 15px; }
+.tou-preset-sydney .syd-screen-nav span { display: block; margin: 13px 0; }
+.tou-preset-sydney .syd-screen-main { padding: 24px; }
+.tou-preset-sydney .syd-screen-main h3 { margin: 0; font-size: 22px; }
+.tou-preset-sydney .syd-screen-metric { margin-top: 25px; color: var(--color-primary); font-size: 50px; font-weight: 750; letter-spacing: -0.05em; }
+.tou-preset-sydney .syd-screen-lines { display: grid; margin-top: 22px; gap: 10px; }
+.tou-preset-sydney .syd-screen-lines i { display: block; height: 9px; background: var(--surface-subtle); }
+.tou-preset-sydney .syd-screen-lines i:nth-child(2) { width: 76%; background: var(--blue-soft); }
+.tou-preset-sydney .syd-screen-lines i:nth-child(3) { width: 54%; }
+
+.tou-preset-sydney .syd-screen-compact .syd-screen-body { min-height: 238px; }
+.tou-preset-sydney .syd-screen-compact .syd-screen-main { padding-top: 18px; padding-bottom: 16px; }
+.tou-preset-sydney .syd-screen-compact .syd-screen-metric { margin-top: 13px; font-size: 42px; }
+.tou-preset-sydney .syd-screen-compact .syd-screen-lines { margin-top: 13px; }
+.tou-preset-sydney .syd-screen-compact + .syd-data-note { margin-top: 6px; }
+
+.tou-preset-sydney .syd-code-insight {
+  display: grid;
+  margin-top: 24px;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 36px;
+  align-items: center;
+}
+.tou-preset-sydney .syd-code-insight pre { margin: 0; }
+.tou-preset-sydney .syd-code-insight-copy { padding-left: 28px; border-left: 3px solid var(--color-blue); }
+.tou-preset-sydney .syd-code-insight-copy strong { display: block; font-size: 24px; line-height: 1.2; }
+.tou-preset-sydney .syd-code-insight-copy p { margin-top: 12px; color: var(--text-secondary); font-size: 16px; }
+
+.tou-preset-sydney .syd-contact {
+  display: grid;
+  margin-top: 44px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.tou-preset-sydney .syd-contact > div { padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.35); }
+.tou-preset-sydney .syd-contact span { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; opacity: 0.65; text-transform: uppercase; }
+.tou-preset-sydney .syd-contact strong { font-size: 16px; }
+
+.tou-preset-sydney .syd-gallery-index {
+  position: absolute;
+  right: 28px;
+  top: 22px;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.tou-preset-sydney .syd-image-full-copy .syd-gallery-index {
+  position: static;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.72);
+}
