@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTouyingConfig } from '../composables/useTouyingConfig'
-import HarbourOutline from '../themes/harbour/layouts/outline.vue'
+import DewdropOutline from '../themes/dewdrop/layouts/outline.vue'
 
 defineOptions({ inheritAttrs: false })
 const config = useTouyingConfig()
-// Harbour owns the navigation-aware outline layout.
-const component = computed(() => HarbourOutline)
+// University has no dedicated outline layout; fall back to Dewdrop's.
+const component = computed(() => DewdropOutline)
 </script>
 
 <template>

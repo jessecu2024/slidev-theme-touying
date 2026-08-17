@@ -1,21 +1,24 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTouyingConfig } from '../composables/useTouyingConfig'
-import HarbourDefault from '../themes/harbour/layouts/default.vue'
-import SandstoneDefault from '../themes/sandstone/layouts/default.vue'
-import StudioDefault from '../themes/studio/layouts/default.vue'
+import DewdropDefault from '../themes/dewdrop/layouts/default.vue'
+import NewDefault from '../themes/new/layouts/default.vue'
+import UniversityDefault from '../themes/university/layouts/default.vue'
+import SimpleDefault from '../themes/simple/layouts/default.vue'
 import SydneyDefault from '../themes/sydney/layouts/default.vue'
 
 defineOptions({ inheritAttrs: false })
 const config = useTouyingConfig()
 const component = computed(() =>
-  config.value.preset === 'sandstone'
-    ? SandstoneDefault
-    : config.value.preset === 'studio'
-      ? StudioDefault
+  config.value.preset === 'new'
+    ? NewDefault
+    : config.value.preset === 'university'
+    ? UniversityDefault
+    : config.value.preset === 'simple'
+      ? SimpleDefault
       : config.value.preset === 'sydney'
         ? SydneyDefault
-        : HarbourDefault,
+        : DewdropDefault,
 )
 </script>
 

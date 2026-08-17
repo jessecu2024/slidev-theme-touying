@@ -6,7 +6,7 @@ import { deepMerge } from '@antfu/utils'
 // ---- Types ----------------------------------------------------------------
 
 /** Non-CSS configuration read from frontmatter `touying:` */
-export type TouyingPreset = 'harbour' | 'sandstone' | 'studio' | 'sydney'
+export type TouyingPreset = 'new' | 'dewdrop' | 'university' | 'simple' | 'sydney'
 
 export interface TouyingConfig {
   preset: TouyingPreset
@@ -32,7 +32,7 @@ export interface TouyingConfig {
 // ---- Defaults & maps -------------------------------------------------------
 
 const DEFAULTS: TouyingConfig = {
-  preset: 'harbour',
+  preset: 'dewdrop',
   navigation: 'mini-slides',
   footer: '',
   footerRight: '',
@@ -59,13 +59,8 @@ export const useTouyingConfig = createSharedComposable(() => {
     const first = slides.value?.[0]
     const touying = first.meta.slide.frontmatter.touying ?? {}
     const merged = deepMerge(DEFAULTS, touying) as TouyingConfig
-    const legacyAliases: Record<string, TouyingPreset> = {
-      dewdrop: 'harbour',
-      university: 'sandstone',
-      simple: 'studio',
-    }
-    const requestedPreset = legacyAliases[merged.preset] ?? merged.preset
-    const presets = new Set<TouyingPreset>(['harbour', 'sandstone', 'studio', 'sydney'])
+    const requestedPreset = String(merged.preset).toLowerCase() as TouyingPreset
+    const presets = new Set<TouyingPreset>(['new', 'dewdrop', 'university', 'simple', 'sydney'])
     merged.preset = presets.has(requestedPreset) ? requestedPreset : DEFAULTS.preset
     return merged
   })

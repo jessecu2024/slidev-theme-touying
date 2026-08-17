@@ -2,9 +2,9 @@
 theme: ../
 
 touying:
-  preset: harbour
+  preset: dewdrop
   navigation: mini-slides
-  footer: slidev-theme-touying · Harbour
+  footer: slidev-theme-touying · Dewdrop
   footerRight: ''
 ---
 

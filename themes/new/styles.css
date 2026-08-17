@@ -1,0 +1,79 @@
+:root.tou-preset-new {
+  --slidev-theme-primary: #0071e3;
+  --new-ink: #1d1d1f;
+  --new-muted: #6e6e73;
+  --new-line: #d2d2d7;
+  --new-track: #e8e8ed;
+  --new-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Inter, Arial, sans-serif;
+
+  .slidev-layout,
+  .tou-layer {
+    font-family: var(--new-font);
+    font-size: 24px;
+    color: var(--new-ink);
+    letter-spacing: -0.012em;
+  }
+
+  .slidev-layout {
+    padding: 76px 78px 78px;
+    background: #ffffff !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--new-ink);
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      font-size: 2em;
+      line-height: 1.08;
+      font-weight: 720;
+    }
+
+    h2 {
+      font-size: 1.55em;
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 0.9em;
+    }
+
+    h3 {
+      font-size: 1.08em;
+      font-weight: 680;
+    }
+
+    p,
+    li {
+      line-height: 1.5;
+    }
+
+    strong,
+    b,
+    a {
+      color: var(--slidev-theme-primary);
+    }
+
+    blockquote {
+      border-left: 4px solid var(--slidev-theme-primary);
+      background: #f5f5f7;
+      color: var(--new-ink);
+      padding: 0.85em 1em;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    thead tr {
+      border-bottom: 2px solid var(--new-ink);
+    }
+
+    tbody tr {
+      border-color: var(--new-line);
+    }
+  }
+}

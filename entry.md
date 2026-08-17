@@ -8,11 +8,12 @@ routerMode: hash
 
 This is a Slidev theme inspired by the style of [Touying](https://touying-typ.github.io/).
 
-Choose one of four original presentation systems:
+Choose a preset:
 
-- <a :href="getUrl('harbour')" class="text-primary">Harbour</a>
-- <a :href="getUrl('sandstone')" class="text-primary">Sandstone</a>
-- <a :href="getUrl('studio')" class="text-primary">Studio</a>
+- <a :href="getUrl('new')" class="text-primary">NEW</a>
+- <a :href="getUrl('dewdrop')" class="text-primary">Dewdrop</a>
+- <a :href="getUrl('university')" class="text-primary">University</a>
+- <a :href="getUrl('simple')" class="text-primary">Simple</a>
 - <a :href="getUrl('sydney')" class="text-primary">Sydney</a>
 
 <script setup>
